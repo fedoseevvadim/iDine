@@ -15,6 +15,11 @@
 		C1224C6523660E2B007CDE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1224C6323660E2B007CDE22 /* LaunchScreen.storyboard */; };
 		C1224C7023660E30007CDE22 /* iDineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1224C6F23660E30007CDE22 /* iDineTests.swift */; };
 		C1224C7B23660E30007CDE22 /* iDineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1224C7A23660E30007CDE22 /* iDineUITests.swift */; };
+		C1224C8923660E6A007CDE22 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1224C8823660E6A007CDE22 /* Helper.swift */; };
+		C1224C8C23660F40007CDE22 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1224C8A23660F40007CDE22 /* Menu.swift */; };
+		C1224C8D23660F40007CDE22 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1224C8B23660F40007CDE22 /* Order.swift */; };
+		C1224C8F236614A4007CDE22 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = C1224C8E236614A4007CDE22 /* menu.json */; };
+		C1E20F64236EA0E60035CD3D /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E20F63236EA0E60035CD3D /* ItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		C1224C7623660E30007CDE22 /* iDineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1224C7A23660E30007CDE22 /* iDineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineUITests.swift; sourceTree = "<group>"; };
 		C1224C7C23660E30007CDE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1224C8823660E6A007CDE22 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C1224C8A23660F40007CDE22 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		C1224C8B23660F40007CDE22 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		C1224C8E236614A4007CDE22 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		C1E20F63236EA0E60035CD3D /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +109,16 @@
 		C1224C5723660E0D007CDE22 /* iDine */ = {
 			isa = PBXGroup;
 			children = (
+				C1E20F63236EA0E60035CD3D /* ItemRow.swift */,
 				C1224C5823660E0D007CDE22 /* AppDelegate.swift */,
 				C1224C5A23660E0D007CDE22 /* SceneDelegate.swift */,
+				C1224C8823660E6A007CDE22 /* Helper.swift */,
+				C1224C8A23660F40007CDE22 /* Menu.swift */,
+				C1224C8B23660F40007CDE22 /* Order.swift */,
 				C1224C5C23660E0D007CDE22 /* ContentView.swift */,
 				C1224C5E23660E2B007CDE22 /* Assets.xcassets */,
 				C1224C6323660E2B007CDE22 /* LaunchScreen.storyboard */,
+				C1224C8E236614A4007CDE22 /* menu.json */,
 				C1224C6623660E2B007CDE22 /* Info.plist */,
 				C1224C6023660E2B007CDE22 /* Preview Content */,
 			);
@@ -242,6 +257,7 @@
 			files = (
 				C1224C6523660E2B007CDE22 /* LaunchScreen.storyboard in Resources */,
 				C1224C6223660E2B007CDE22 /* Preview Assets.xcassets in Resources */,
+				C1224C8F236614A4007CDE22 /* menu.json in Resources */,
 				C1224C5F23660E2B007CDE22 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1224C8D23660F40007CDE22 /* Order.swift in Sources */,
 				C1224C5923660E0D007CDE22 /* AppDelegate.swift in Sources */,
 				C1224C5B23660E0D007CDE22 /* SceneDelegate.swift in Sources */,
+				C1E20F64236EA0E60035CD3D /* ItemRow.swift in Sources */,
 				C1224C5D23660E0D007CDE22 /* ContentView.swift in Sources */,
+				C1224C8923660E6A007CDE22 /* Helper.swift in Sources */,
+				C1224C8C23660F40007CDE22 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
