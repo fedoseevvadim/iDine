@@ -20,27 +20,30 @@ struct ItemRow: View {
                                         ]
     var body: some View {
         
-        HStack {
-            Image(item.thumbnailImage)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
-                
-            VStack (alignment: .leading){
-                Text(item.name)
-                    .font(.headline)
-                Text("$\(item.price)")
-            }
+        NavigationLink(destination: ItemDetail(item: item)) {
             
-            Spacer()
-
-            ForEach ( item.restrictions, id: \.self ) { restriction in
-                Text(restriction)
-                    .font(.caption)
-                    .fontWeight(.black)
-                    .padding(5)
-                    .background(Self.colors[restriction, default: .black])
+            HStack {
+                Image(item.thumbnailImage)
                     .clipShape(Circle())
-                    .foregroundColor(.white)
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                    
+                VStack (alignment: .leading){
+                    Text(item.name)
+                        .font(.headline)
+                    Text("$\(item.price)")
+                }.layoutPriority(1)
+                
+                Spacer()
+
+                ForEach ( item.restrictions, id: \.self ) { restriction in
+                    Text(restriction)
+                        .font(.caption)
+                        .fontWeight(.black)
+                        .padding(5)
+                        .background(Self.colors[restriction, default: .black])
+                        .clipShape(Circle())
+                        .foregroundColor(.white)
+                }
             }
         }
     }
